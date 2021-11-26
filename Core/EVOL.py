@@ -146,7 +146,7 @@ if __name__ == '__main__':
     OutLiersDetector.__TOPIC__ = topicNumber
 
     # step 1 :  filter outliers and construct a partition skeleton
-    for clusternum in range(k-2,k+10):  # select a best k according to the results
+    for clusternum in range(2,40):  # select a best k according to the results
         skeletonPartitionWithsNums = constructPartionSkeleton(entityList,OrpanEntityList,clusternum)
         finalClustersWithNums = list()
         finalClustersWithNames = list()

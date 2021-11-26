@@ -2,7 +2,6 @@ import subprocess
 
 import networkx as nx
 
-#from core.MojoFM import exportingToMoJoFormatAlgorithm
 
 def exportingToMoJoFormatAlgorithm(k, n, clustersFinal, fileNames, filePathNames, run_no, folderPathResult):
 
@@ -26,9 +25,6 @@ class Evaluator():
     def getMojoResult(self,clustersWithNames,k):
 
         rsfPath = Evaluator.__rsfPath__
-        # rsfPath = '/intl.rsf'
-        # rsfPath = '/itk-modules.rsf'
-
         pathResultString = []
         pathResultString.append("result/")
         run_no = self.m_tpoicNum
